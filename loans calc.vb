@@ -67,7 +67,7 @@ Application.DisplayAlerts = True
 Range("A2", Range("A2").Offset(UBound(sTemp, 1) - 1, 2)).Value = sTemp
 'Now we have to loop through the Array to get what we want
 
-'We're going to temporarily store units in column "S" to calculate grade level increases
+'We're going to extract cohort
 Range("D2").Activate
 i = 0
 For r = LBound(sTemp, 1) To UBound(sTemp, 1)
